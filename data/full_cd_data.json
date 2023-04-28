@@ -1,0 +1,7 @@
+{
+    "file_name": "../data/ginger.obj",
+    "dt": 0.01,
+    "YM": 1000,
+    "pr": 0.4,
+    "with_dynamics": 1
+}
