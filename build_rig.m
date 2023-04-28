@@ -35,12 +35,12 @@ function build_rig(V, F, mesh_name, rig_name, raw_data_dir)
 
     function onmeshdown(src, ev)
         down_pos=get(gca,'currentpoint');
+       
+
         V = src.Vertices(:, 1:2);
 
-        V = [V; down_pos(1, 1:2)];
-        E = boundary_faces(src.Faces);
-
-        [V, F] = triangulate(V(:, 1:2), E, 'Flags', '-q20D');
+        V = [V];
+        % [V, F] = triangulate(V(:, 1:2), E, 'Flags', '-q20D');
         
 
         C = [C; down_pos(1, 1:2)];

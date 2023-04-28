@@ -3,7 +3,7 @@ close all;
 clear;
 cd ./
 raw_data_dir_root = "./data/raw_data/";
-mesh_name = "ginger";
+mesh_name = "fly";
 rig_name = "lbs_rig";
 %%% For CTHULU
 % mesh_name = "cthulu";
@@ -20,8 +20,8 @@ rig_name = "lbs_rig";
 
 %%For Fly
 
-raw_data_dir = strcat(raw_data_dir_root, mesh_name, "\");
-rig_data_dir = strcat(raw_data_dir, rig_name, "\")
+raw_data_dir = strcat(raw_data_dir_root, mesh_name, "/");
+rig_data_dir = strcat(raw_data_dir, rig_name, "/")
 mkdir(rig_data_dir)
 
 %[V, F] =readOBJ("data\raw_data\fly\fly.obj");
